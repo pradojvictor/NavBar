@@ -48,7 +48,7 @@ export const WrapperHeader = styled.header`
             position: absolute;
             top: 8vh;
             right: 0;
-            width: 60vw;
+            width: 70vw;
             height: 92vh;
             background: rgba(35, 35, 46, 0.6);
             flex-direction: column;
@@ -58,7 +58,7 @@ export const WrapperHeader = styled.header`
         }
         li{
             margin-left: 0;
-            opacity: 0;
+            opacity: 0; //use 100 para mostrar
         }
         .mobile_menu{
             display: block;
