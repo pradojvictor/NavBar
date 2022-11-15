@@ -62,12 +62,11 @@ export default function Header() {
     //     return [isActive, setIsActive]
     // }
 
-    const dropDownRef = useRef(null);
+   
     const [isActive, setIsActive] = useState(false)
     const onClick = () => setIsActive(!isActive)
-
-
-
+   
+    
 
     return (
         <WrapperHeader>
@@ -80,7 +79,7 @@ export default function Header() {
                     <div className="line_3"></div>
                 </div>
 
-                <ul ref={dropDownRef} className={`menu ${isActive ? "active" : "inactive"}`} >
+                <ul  className={`${isActive ? "active" : "inactive"}`} >
                     <li><Link texto="Start" redirect="/" target={undefined} /></li>
                     <li><Link texto="Planets" redirect="/" target={undefined} /></li>
                     <li><Link texto="Moons" redirect="/" target={undefined} /></li>
