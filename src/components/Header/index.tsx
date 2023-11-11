@@ -5,64 +5,6 @@ import { WrapperHeader } from "./style"
 
 export default function Header() {
 
-    // class MobileNavBar {
-    //     mobile_menu: any
-    //     nav_List: any
-    //     nav_Links: any
-    //     activeClass: string
-    //    constructor({mobile_menu, nav_List, nav_Links}: any) {
-    //     this.mobile_menu = document.querySelector(mobile_menu);
-    //     this.nav_List = document.querySelector(nav_List);
-    //     this.nav_Links = document.querySelectorAll(nav_Links);
-    //     this.activeClass = "active";
-    //    }
-
-    //    addClickEvent() {
-    //     this.mobile_menu.addEventListener("click", this.handleClick);
-    //    }
-
-    //    init() {
-    //     if (this.mobile_menu) {
-    //         this.addClickEvent();
-    //     }
-    //     return this;
-    //    }
-    // }
-
-
-
-
-    // const mobileNavBar = new MobileNavBar (
-    //     ".mobile_menu",
-    // );
-    // mobileNavBar.init();
-
-    //  const click = () => {
-    //      console.log("deu certo");
-    //  }
-
-    // const useOutsideClick = (el: any, initialState: any) => {
-    //     const [isActive, setIsActive] = useState(initialState)
-    //     useEffect( () => {
-    //         const onclick = (e: any) => {
-    //             if(el.current !== null && !el.current.contains(e.target)) {
-    //                 setIsActive(!isActive);
-    //             }
-    //         }
-
-    //         if(isActive) {
-    //             window.addEventListener("click", onclick)
-    //         }
-
-    //         return () => {
-    //             window.removeEventListener("click", onclick)
-    //         }
-    //     }, [isActive, el])
-
-    //     return [isActive, setIsActive]
-    // }
-
-   
     const [isActive, setIsActive] = useState(false)
     const onClick = () => setIsActive(!isActive)
    

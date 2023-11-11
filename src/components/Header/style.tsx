@@ -58,7 +58,7 @@ export const WrapperHeader = styled.header`
         }
         li{
             margin-left: 0;
-            opacity: 0; //use 100 para mostrar
+            opacity: 100; //use 100 para mostrar
         }
         .mobile_menu{
             display: block;
